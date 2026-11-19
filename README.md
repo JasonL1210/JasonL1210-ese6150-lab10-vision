@@ -7,7 +7,8 @@ training run, and reported metric.
 ## Safety boundary
 
 - Everything is developed and tested locally.
-- This directory has no Git remote and no code in it performs network writes.
+- The development directory is isolated from the team repository, and this
+  personal project has no Group 12 remote. No project code performs network writes.
 - Hardware-derived values must remain `PENDING_HARDWARE` until measured on the
   actual car and Jetson.
 - Simulation values are never valid submission values.
