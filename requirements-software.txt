@@ -1,0 +1,9 @@
+# Install in a Python 3.10 or 3.11 virtual environment.
+numpy>=1.26,<3
+opencv-python>=4.9,<5
+PyYAML>=6,<7
+matplotlib>=3.8,<4
+onnx>=1.16,<2
+onnxruntime-gpu==1.20.2; platform_system == "Windows"
+onnxruntime>=1.18,<2; platform_system != "Windows"
+

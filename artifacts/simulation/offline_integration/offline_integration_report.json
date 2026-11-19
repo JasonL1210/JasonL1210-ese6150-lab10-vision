@@ -1,0 +1,247 @@
+{
+  "scope": "offline_real_images_with_synthetic_lidar_only",
+  "hardware_submission_evidence": false,
+  "detector_backend": "onnxruntime",
+  "detector_provider": "CPUExecutionProvider",
+  "model": "models/onnx/rtdetrv2_f1tenth_640.onnx",
+  "model_sha256": "ce4f70d99fab18c36b51f0dac69382a570662a92180c821af3f7dc1fd62c86c5",
+  "frame_count": 8,
+  "detection_success_count": 8,
+  "association_success_count": 8,
+  "maximum_sync_skew_s": 0.0040000000000000036,
+  "distance_error_m": {
+    "mean": 0.0011848332091811686,
+    "median": 0.0011441804742678974,
+    "max": 0.0022446390231984914
+  },
+  "outputs": {
+    "montage": "artifacts/simulation/offline_integration/offline_integration_montage.png",
+    "video": "artifacts/simulation/offline_integration/offline_integration.mp4"
+  },
+  "frames": [
+    {
+      "sequence": 0,
+      "dataset_index": 250,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/250.jpg",
+      "frame_timestamp_s": 0.0,
+      "scan_timestamp_s": 0.0,
+      "sync_skew_s": 0.0,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.9859144687652588,
+        "box_xyxy": [
+          230.90901374816895,
+          87.64319658279419,
+          529.1277599334717,
+          358.8178753852844
+        ]
+      },
+      "synthetic_target_x_lidar_m": 1.53,
+      "expected_distance_camera_m": 1.4762141353724487,
+      "estimated_distance_camera_m": 1.477314537735727,
+      "absolute_distance_error_m": 0.0011004023632783522,
+      "position_camera_m": [
+        0.2335073783924121,
+        0.14932139913484974,
+        1.451080861772368
+      ],
+      "selected_beam_count": 21
+    },
+    {
+      "sequence": 1,
+      "dataset_index": 285,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/285.jpg",
+      "frame_timestamp_s": 0.05,
+      "scan_timestamp_s": 0.054000000000000006,
+      "sync_skew_s": 0.0040000000000000036,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.9601356387138367,
+        "box_xyxy": [
+          325.43660163879395,
+          130.1120924949646,
+          394.9341869354248,
+          171.16658449172974
+        ]
+      },
+      "synthetic_target_x_lidar_m": 1.7871428571428571,
+      "expected_distance_camera_m": 1.7214196314841645,
+      "estimated_distance_camera_m": 1.7225844459207973,
+      "absolute_distance_error_m": 0.001164814436632744,
+      "position_camera_m": [
+        0.20172487058878125,
+        -0.09122584772310735,
+        1.7082980110687362
+      ],
+      "selected_beam_count": 22
+    },
+    {
+      "sequence": 2,
+      "dataset_index": 421,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/421.jpg",
+      "frame_timestamp_s": 0.1,
+      "scan_timestamp_s": 0.096,
+      "sync_skew_s": 0.0040000000000000036,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.9790834784507751,
+        "box_xyxy": [
+          246.50141716003418,
+          92.80140101909637,
+          403.70450019836426,
+          229.77807104587555
+        ]
+      },
+      "synthetic_target_x_lidar_m": 2.0442857142857145,
+      "expected_distance_camera_m": 1.9669543429681262,
+      "estimated_distance_camera_m": 1.9682053629975893,
+      "absolute_distance_error_m": 0.0012510200294630902,
+      "position_camera_m": [
+        0.08317351583670715,
+        -0.05988769033980638,
+        1.965535037017045
+      ],
+      "selected_beam_count": 22
+    },
+    {
+      "sequence": 3,
+      "dataset_index": 706,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/706.jpg",
+      "frame_timestamp_s": 0.15000000000000002,
+      "scan_timestamp_s": 0.15000000000000002,
+      "sync_skew_s": 0.0,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.9816988706588745,
+        "box_xyxy": [
+          216.80740356445312,
+          80.42773246765137,
+          473.08799743652344,
+          298.7763261795044
+        ]
+      },
+      "synthetic_target_x_lidar_m": 2.3014285714285716,
+      "expected_distance_camera_m": 2.2305009844379695,
+      "estimated_distance_camera_m": 2.2316245309498726,
+      "absolute_distance_error_m": 0.0011235465119030508,
+      "position_camera_m": [
+        0.1893069724273261,
+        0.06777399390033878,
+        2.2225475479904664
+      ],
+      "selected_beam_count": 22
+    },
+    {
+      "sequence": 4,
+      "dataset_index": 742,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/742.jpg",
+      "frame_timestamp_s": 0.2,
+      "scan_timestamp_s": 0.20400000000000001,
+      "sync_skew_s": 0.0040000000000000036,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.9803473949432373,
+        "box_xyxy": [
+          69.78334426879883,
+          58.548787236213684,
+          305.86503982543945,
+          206.10316693782806
+        ]
+      },
+      "synthetic_target_x_lidar_m": 2.5585714285714287,
+      "expected_distance_camera_m": 2.567711026125371,
+      "estimated_distance_camera_m": 2.5699556651485693,
+      "absolute_distance_error_m": 0.0022446390231984914,
+      "position_camera_m": [
+        -0.63053414419234,
+        -0.23029779974704181,
+        2.4807381436315543
+      ],
+      "selected_beam_count": 20
+    },
+    {
+      "sequence": 5,
+      "dataset_index": 1427,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/1427.jpg",
+      "frame_timestamp_s": 0.25,
+      "scan_timestamp_s": 0.246,
+      "sync_skew_s": 0.0040000000000000036,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.9702867269515991,
+        "box_xyxy": [
+          194.92820739746094,
+          74.86660122871399,
+          331.62097930908203,
+          172.08845973014832
+        ]
+      },
+      "synthetic_target_x_lidar_m": 2.815714285714286,
+      "expected_distance_camera_m": 2.7640726611325492,
+      "estimated_distance_camera_m": 2.7625566101029704,
+      "absolute_distance_error_m": 0.0015160510295788576,
+      "position_camera_m": [
+        -0.24940925971203542,
+        -0.30592319665482953,
+        2.7342137888142544
+      ],
+      "selected_beam_count": 23
+    },
+    {
+      "sequence": 6,
+      "dataset_index": 1613,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/1613.jpg",
+      "frame_timestamp_s": 0.30000000000000004,
+      "scan_timestamp_s": 0.30000000000000004,
+      "sync_skew_s": 0.0,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.9795281887054443,
+        "box_xyxy": [
+          156.88343048095703,
+          54.00054931640625,
+          398.3535385131836,
+          260.99228382110596
+        ]
+      },
+      "synthetic_target_x_lidar_m": 3.072857142857143,
+      "expected_distance_camera_m": 3.0005113108019086,
+      "estimated_distance_camera_m": 3.0007632191941753,
+      "absolute_distance_error_m": 0.000251908392266742,
+      "position_camera_m": [
+        -0.18030088132461886,
+        -0.11564403994758661,
+        2.993108408642553
+      ],
+      "selected_beam_count": 22
+    },
+    {
+      "sequence": 7,
+      "dataset_index": 1649,
+      "image_path": "data/f110_dataset_20220209/f110_dataset_20220209/1649.jpg",
+      "frame_timestamp_s": 0.35000000000000003,
+      "scan_timestamp_s": 0.35400000000000004,
+      "sync_skew_s": 0.0040000000000000036,
+      "detection": {
+        "label": "f1tenth_car",
+        "score": 0.972615659236908,
+        "box_xyxy": [
+          167.97402381896973,
+          81.23495936393738,
+          423.38751792907715,
+          299.1793119907379
+        ]
+      },
+      "synthetic_target_x_lidar_m": 3.33,
+      "expected_distance_camera_m": 3.252374377273822,
+      "estimated_distance_camera_m": 3.251548093386694,
+      "absolute_distance_error_m": 0.0008262838871280209,
+      "position_camera_m": [
+        -0.0689755281906483,
+        0.10331322606731813,
+        3.249174319336688
+      ],
+      "selected_beam_count": 23
+    }
+  ]
+}

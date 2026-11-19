@@ -1,0 +1,10 @@
+[project]
+name = "ese6150-lab10-local"
+version = "0.1.0"
+description = "Independent local implementation of ESE 6150 Lab 10"
+requires-python = ">=3.10,<3.13"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+

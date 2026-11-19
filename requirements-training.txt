@@ -1,0 +1,7 @@
+# Install a PyTorch build that matches the local NVIDIA driver/CUDA runtime.
+# Do not install torch from this file until the CUDA environment is inspected.
+torch
+torchvision
+torchmetrics
+scipy>=1.12,<2
+

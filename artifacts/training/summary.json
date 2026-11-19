@@ -1,0 +1,64 @@
+{
+  "device": "cuda",
+  "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "train_count": 1542,
+  "validation_count": 250,
+  "best_ap50": 1.0,
+  "best_epoch_by_original_ap_only_policy": 2,
+  "best_record_epoch_by_revised_tie_break": 9,
+  "selected_checkpoint_epoch": 12,
+  "selection_note": "The completed run originally checkpointed only strict AP50 improvements. Epoch 12 is selected because it retains AP50=1 and accuracy_50=1 while improving mean IoU and validation loss over the saved epoch-2 checkpoint. Future runs use AP50, accuracy_50, mean_iou, then lower validation_loss.",
+  "final": {
+    "epoch": 12,
+    "train_loss": 1.1018743980675936,
+    "validation_loss": 0.22794984467327595,
+    "mean_iou": 0.9740407257080078,
+    "median_iou": 0.9776297211647034,
+    "accuracy_50": 1.0,
+    "ap50": 1.0,
+    "mean_score": 0.9709048862457276,
+    "learning_rate": 0.0001,
+    "epoch_seconds": 55.41940539999632,
+    "peak_cuda_memory_gb": 5.3663554191589355
+  },
+  "config": {
+    "data_root": "data/f110_dataset_20220209/f110_dataset_20220209",
+    "pretrained_checkpoint": "models/pretrained/rtdetrv2_r18vd_120e_coco_rerun_48.1.pth",
+    "output_dir": "artifacts/training",
+    "image_size": 640,
+    "epochs": 12,
+    "batch_size": 16,
+    "gradient_accumulation": 1,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "warmup_steps": 200,
+    "clip_max_norm": 0.1,
+    "validation_fraction": 0.15,
+    "split_block_size": 50,
+    "seed": 6150,
+    "num_workers": 2,
+    "amp": true,
+    "ema_decay": 0.9998,
+    "confidence_threshold": 0.5
+  },
+  "pretrained_load": {
+    "exact_tensor_count": 527,
+    "exact_parameter_fraction": 0.9999488756548006,
+    "copied_class_heads": [
+      "decoder.dec_score_head.0.bias",
+      "decoder.dec_score_head.0.weight",
+      "decoder.dec_score_head.1.bias",
+      "decoder.dec_score_head.1.weight",
+      "decoder.dec_score_head.2.bias",
+      "decoder.dec_score_head.2.weight",
+      "decoder.enc_score_head.bias",
+      "decoder.enc_score_head.weight"
+    ],
+    "missing_model_keys": [],
+    "unused_checkpoint_keys": [
+      "decoder.anchors",
+      "decoder.denoising_class_embed.weight",
+      "decoder.valid_mask"
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+# These values are deterministic synthetic fixtures, not submission values.
+mode: simulation
+
+camera:
+  source: held_out_f110_images
+  width: 640
+  height: 360
+  detector_width: 640
+  detector_height: 640
+  intrinsics:
+    # Offline checkerboard K scaled from 960x540 to the dataset's 640x360.
+    fx: 463.0163370093333
+    fy: 464.4196856746667
+    cx: 305.5099746246667
+    cy: 175.440092958
+
+lidar:
+  scan_topic: synthetic
+  camera_center_in_lidar_m:
+    x: 0.08
+    y: 0.0
+    z: -0.06
+  residual_rotation_rpy_deg:
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+  association:
+    trim_fraction: 0.15
+    column_half_width_px: 14.0
+    vertical_margin_px: 4.0
+    absolute_range_jump_m: 0.20
+    relative_range_jump: 0.08
+    minimum_cluster_size: 2
+
+detector:
+  backend: onnxruntime_cpu
+  confidence_threshold: 0.5
+  class_names:
+    - f1tenth_car
+
+simulation:
+  random_seed: 6150
+  max_sync_skew_s: 0.03
+  target_depth_camera_m_range: [1.45, 3.25]
+

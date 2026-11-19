@@ -1,0 +1,7 @@
+# TensorRT, CUDA, and usually PyCUDA come from the JetPack installation.
+# They are intentionally not pinned or installed from PyPI here.
+# Jetson runtime additions, if missing:
+numpy
+opencv-python
+PyYAML
+

@@ -1,0 +1,42 @@
+# Replace values only after measuring them on the actual car/Jetson.
+mode: hardware
+
+camera:
+  device: PENDING_HARDWARE
+  width: 960
+  height: 540
+  requested_fps: 60
+  intrinsics:
+    fx: PENDING_HARDWARE
+    fy: PENDING_HARDWARE
+    cx: PENDING_HARDWARE
+    cy: PENDING_HARDWARE
+  distortion: PENDING_HARDWARE
+
+lidar:
+  scan_topic: PENDING_HARDWARE
+  camera_center_in_lidar_m:
+    x: PENDING_HARDWARE
+    y: PENDING_HARDWARE
+    z: PENDING_HARDWARE
+  residual_rotation_rpy_deg:
+    roll: PENDING_HARDWARE
+    pitch: PENDING_HARDWARE
+    yaw: PENDING_HARDWARE
+
+tensorrt:
+  engine_path: PENDING_HARDWARE
+  precision: PENDING_HARDWARE
+
+benchmark:
+  fp32_inference_ms: PENDING_HARDWARE
+  fp16_inference_ms: PENDING_HARDWARE
+
+evidence:
+  lidar_projection_image: PENDING_HARDWARE
+  detection_image: PENDING_HARDWARE
+  measurement_image: PENDING_HARDWARE
+  package_distance_m: PENDING_HARDWARE
+  tape_distance_m: PENDING_HARDWARE
+  video_link: PENDING_HARDWARE
+
